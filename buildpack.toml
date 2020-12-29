@@ -1,0 +1,22 @@
+# Buildpack API version
+api = "0.2"
+
+# Buildpack ID and metadata
+[buildpack]
+id = "dapper-devops/bash"
+version = "2020.12.0"
+name = "Bash Buildpack"
+homepage = "https://gitlab.com/watheia/dapper-devops/buildpacks/bash"
+
+# Stacks that the buildpack will work with
+[[stacks]]
+id = "dev.watheia.stacks.slim"
+
+[[stacks]]
+id = "dev.watheia.stacks.dendrite"
+
+[[stacks]]
+id = "io.buildpacks.stacks.bionic"
+
+[[stacks]]
+id = "org.cloudfoundry.stacks.cflinuxfs3"
